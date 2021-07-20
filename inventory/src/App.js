@@ -20,7 +20,7 @@ function App() {
 
   const updateFilters = (searchParams) => {
     setFilters(searchParams);
-  }; 
+  };
 
   const addItemToData = (item) => {
     let items = data["items"];
@@ -29,16 +29,13 @@ function App() {
     const requestOptions = {
       method: "POST",
       headers: {
-        "Content-Type":"application/json",
+        "Content-Type": "application/json",
       },
       body: JSON.stringify(item),
     };
-    fetch("http://localhost:3000/items",requestOptions)
+    fetch("http://localhost:3000/items", requestOptions)
       .then((response) => response.json())
-      .then(
-        items.push(item),
-        setData({ items: items }),
-      );
+      .then(items.push(item), setData({ items: items }));
     console.log(data);
   };
   const filterData = (data) => {
@@ -150,6 +147,5 @@ function Data(props) {
     </div>
   );
 }
-//
-export default App;
 
+export default App;
