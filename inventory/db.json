@@ -1,3 +1,21 @@
 {
-  "items": []
+  "items": [
+    {
+      "id": 1
+    },
+    {
+      "name": "pickle sandwich",
+      "price": "1.21",
+      "type": "fancy",
+      "brand": "good pickles",
+      "id": 2
+    },
+    {
+      "name": "gerbils",
+      "price": "2.33",
+      "type": "Furry",
+      "brand": "Cheap Gerbils",
+      "id": 3
+    }
+  ]
 }
