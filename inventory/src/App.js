@@ -20,7 +20,7 @@ function App() {
 
   const updateFilters = (searchParams) => {
     setFilters(searchParams);
-  };
+  }; 
 
   const addItemToData = (item) => {
     let items = data["items"];
@@ -150,5 +150,6 @@ function Data(props) {
     </div>
   );
 }
-
+//
 export default App;
+
