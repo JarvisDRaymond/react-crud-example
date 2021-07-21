@@ -3,6 +3,8 @@ import Info from "./Info.js";
 import SearchBar from "./SearchBar.js";
 import AddItem from "./AddItem.js";
 import ItemsDisplay from "./ItemsDisplay.js";
+import Test from "./Test.js";
+
 import PropTypes from "prop-types";
 import { useState } from "react";
 import styled from "styled-components";
@@ -17,6 +19,7 @@ const Title = styled.h1`
 function App() {
   const [filters, setFilters] = useState({});
   const [data, setData] = useState({ items: [] });
+  const [showTest, setShowTest] = useState(true);
 
   const updateFilters = (searchParams) => {
     setFilters(searchParams);
@@ -75,6 +78,7 @@ function App() {
         <div className="row  mt-5">
           <AddItem addItem={addItemToData} />
         </div>
+        {showTest ? <Test shown={setShowTest} /> : null}
         <br /> <br /> <br /> <br /> <br />
         <Info title="Inventory" />
         <ButtonState />

@@ -1,21 +1,18 @@
 {
   "items": [
     {
+      "name": "Pickles",
+      "price": "2.33",
+      "type": "Green",
+      "brand": "Tasty Pickle",
       "id": 1
     },
     {
-      "name": "pickle sandwich",
-      "price": "1.21",
-      "type": "fancy",
-      "brand": "good pickles",
+      "name": "Potato Chips",
+      "price": "1.32",
+      "type": "Salt & Vinegar",
+      "brand": "Tasty Pickle",
       "id": 2
-    },
-    {
-      "name": "gerbils",
-      "price": "2.33",
-      "type": "Furry",
-      "brand": "Cheap Gerbils",
-      "id": 3
     }
   ]
 }
